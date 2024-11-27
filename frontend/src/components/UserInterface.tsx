@@ -99,7 +99,7 @@ const UserInterface: React.FC<UserInterfaceProps> = ({ backendName }) => {
 
             {/*Create user update user */}
             <div className="flex w-full-xl justify-center items-center min-h-screen bg-gray-800 rounded-lg shadow-md mb-4">
-                <div className="w-2/3 p-8 bg-gray-200 rounded-lg shadow-md">
+                <div className="w-2/3 p-8 bg-slate-500 rounded-lg shadow-md">
                     {/* Your form elements */}
                     {/*creating user or adding user*/}
                     <form onSubmit={createUser} className="mb-6 p-4 bg-blue-100 rounded shadow max-w-xl justify-center">
@@ -140,7 +140,7 @@ const UserInterface: React.FC<UserInterfaceProps> = ({ backendName }) => {
                             onChange={(e) => setUpdateUser({ ...updateUser, email: e.target.value })}
                             className="mb-2 w-full p-2 border border-gray-300 rounded"
                         />
-                        <button type="submit" className="w-full p-2 shadow-2xl text-white bg-green-500 rounded hover:bg-green-600">
+                        <button type="submit" className="w-full p-2 shadow-2xl text-white bg-slate-700 rounded hover:bg-green-600">
                             Update User
                         </button>
                     </form>
